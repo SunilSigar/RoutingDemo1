@@ -1,0 +1,15 @@
+<div align="center">
+  <h1 align="center" [ngClass]="{class1:cone}" appMyhighlighter>===Departments Detail Table===</h1>
+  <table border="solid" [ngClass]="{class2:ctwo}" class="class2">
+    <tr>
+      <th>Dept Id</th>
+      <th>Name</th>
+      <th>Location</th>
+    </tr>
+    <tr *ngFor='let dep of departments'>
+      <td>{{dep.deptno}}</td>
+      <td>{{dep.deptname}}</td>
+      <td>{{dep.Location}}</td>
+    </tr>
+  </table>
+</div>
